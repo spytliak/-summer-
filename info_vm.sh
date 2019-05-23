@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 INTRO="Configuration server"
 RELEASE="cat /etc/*release | head -1"
 KERNEL="uname -r"
@@ -29,4 +28,3 @@ for info in  "RELEASE $RELEASE" "KERNEL $KERNEL" "UPTIME $UPTIME;$REBOOT" "USERS
   done
  done
 exit 0
-
