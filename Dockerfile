@@ -1,9 +1,7 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y sysstat
+RUN apt-get update && apt-get install -y sysstat net-tools systemd
 
-ADD info_vm.sh /root/info_vm.sh
-#ENTRYPOINT ["/root/info_vm.sh"]
-RUN ["chmod", "+x", "/root/info_vm.sh"]
-#CMD ["/root/info_vm.sh"]
-
+ADD info_vm.sh /info_vm.sh
+RUN ["chmod", "+x", "/info_vm.sh"]
+#CMD ["./info_vm.sh"]
