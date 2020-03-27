@@ -1,19 +1,19 @@
-INFO script
+#### INFO script
 
 Script to get full information about the server
 
 
-Setup
+#### Setup
 
 docker build -t [NAME] .
 
-
-Usage
+#### Usage
 
 docker run [NAME]
 
 
-Example
+#### Example
+```
 
 root@:~/metrics/-summer-# docker run ub1
 ===Configuration server b977019568c9====
